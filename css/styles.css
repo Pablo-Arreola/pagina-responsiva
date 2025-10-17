@@ -1,0 +1,78 @@
+/* Estilos básicos */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Tarjetas */
+.cards {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* ocultar links en pantallas pequeñas */
+    flex-direction: column;
+    gap: 0;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .cards {
+    grid-template-columns: 1fr; /* 1 columna en móviles */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas tabletas */
+  }
+}
+
+@media (min-width: 1025px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en escritorio */
+  }
+}
