@@ -64,7 +64,7 @@ Gradiente animado con íconos de redes (GitHub, LinkedIn, X).
 1️⃣ Clona este repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/pagina-responsiva.git
+git clone https://github.com/Pablo-Arreola/pagina-responsiva.git
 cd pagina-responsiva
 ```
 
